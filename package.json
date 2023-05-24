@@ -1,0 +1,20 @@
+{
+  "name": "eventick",
+  "version": "1.0.0",
+  "description": "figma to html",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w",
+    "tw": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch ",
+    "server": "live-server && npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
