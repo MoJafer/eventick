@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+@layer components {
+    .mobile-menu {
+        @apply fixed top-24 right-10 left-10 flex flex-col items-center bg-white p-5 rounded-2xl text-primary-blue  z-50;
+    }
+    .mobile-menu a:not(:last-child) {
+        @apply mb-5;
+    }
+    .input {
+        @apply bg-transparent border-b-white border-b-2 focus:outline-none text-xl font-bold;
+    }
+
+    .padding {
+        @apply md:px-[180px] px-5 py-[34px];
+    }
+    .button-outline {
+        @apply px-9 py-3 rounded-3xl border-solid border-2 border-[#3D37F1] text-[#3D37F1] font-bold;
+    }
+    .brands img {
+        @apply mr-5 ;
+    }
+    .footer-links a {
+        @apply mb-2 max-lg:items-center;
+    }
+
+    .footer-links a:hover {
+        @apply underline underline-offset-2;
+    }
+}
+
+.brands a {
+    margin-right: 50px;
+}
+
+.ellipse {
+    position: absolute;
+    left: -2.72%;
+    right: -12.17%;
+    top: 66.5%;
+    bottom: -0.14%;
+    background: #141572;
+    filter: blur(50px);
+}
+
+/* .brands img:last-child:nth-child(7n - 1) {
+    grid-column-end: -1;
+}
+
+.brands img:nth-last-child(6):nth-child(6n + 1) {
+    grid-column-end: 10;
+} */
